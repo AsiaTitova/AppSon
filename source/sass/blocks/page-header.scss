@@ -1,3 +1,8 @@
 .page-header__container {
+  @include wrap ($desktop-width, 0 auto);
+  position: absolute;
   padding: 0;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }

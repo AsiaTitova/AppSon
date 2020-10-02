@@ -50,4 +50,13 @@
   border: none;
   background-color: $dark-blue;
   border-radius: 25px;
+
+  &:hover,
+  &focus {
+    background-color: $blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

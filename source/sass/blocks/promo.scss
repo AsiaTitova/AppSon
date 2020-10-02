@@ -1,0 +1,98 @@
+.promo {
+  background-image: url("../img/bg-promo-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 1920px 1043px;
+  background-position: 50% 0;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-promo-desktop@2x.png");
+  }
+
+  // @media (min-width: $max-desktop-width) {
+  //   background-size: cover;
+  //   background-position: 50% 0;
+  // }
+}
+
+.promo__container {
+  padding: 207px 263px 618px;
+  background-image: url("../img/bg-promo-device@1x.png");
+  background-repeat: no-repeat;
+  background-size: 810px 1067px;
+  background-position: 165px 507px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-promo-device@2x.png");
+  }
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 20px;
+  color: $dark-gray;
+  font-size: 36px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.promo__content {
+  margin: 0;
+  margin-bottom: 30px;
+  color: $gray;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.promo__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.promo__download {
+  display: block;
+  margin-right: 30px;
+  padding: 12px 40px;
+  color: $white;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  background-color: $blue;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.promo__free-trial {
+  display: block;
+  padding: 10px 38px;
+  color: $blue;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid $blue;
+  border-radius: 25px;
+  background-color: $white;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

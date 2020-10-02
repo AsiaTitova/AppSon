@@ -1,8 +1,17 @@
 .logo__link {
-  @include border-bottom-radius (20px, 20px);
+  @include border-bottom-radius (21.5px, 21.5px);
   display: block;
   padding: 23px 25px 15px 25px;
   background-color: $blue;
+
+  &:hover,
+  &focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .logo__img {
