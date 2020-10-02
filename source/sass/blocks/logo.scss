@@ -1,0 +1,10 @@
+.logo__link {
+  @include border-bottom-radius (20px, 20px);
+  display: block;
+  padding: 23px 25px 15px 25px;
+  background-color: $blue;
+}
+
+.logo__img {
+  display: block;
+}

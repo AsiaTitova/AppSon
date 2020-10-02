@@ -14,7 +14,10 @@
         <nav class="page-header__navigation navigation">
           <div class="navigation__logo logo">
             <a class="logo__link" href="index.html" aria-label="Go to home page">
-              <!-- 131px --><img class="logo__img" src="img/logo.svg" width="131" height="33px" alt="Company's logo">
+              <picture>
+                <!-- 1x: 131px, 2x: 262px --><source srcset="img/content-logo-desktop@1x.webp 1x, img/content-logo-desktop@2x.webp 2x" type="image/webp">
+                <!-- 1x: 131px, 2x: 262px --><img class="logo__img" src="img/content-logo-desktop@1x.png" srcset="img/content-logo-desktop@2x.png" width="131" height="33px" alt="Company's logo">
+              </picture>
             </a>
           </div>
           <ul class="navigation__list">
