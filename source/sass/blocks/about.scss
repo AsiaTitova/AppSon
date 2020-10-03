@@ -1,0 +1,49 @@
+.about__container {
+  position: relative;
+  padding: 226px 10px 117px 585px;
+  background-image: url("../../img/bg-about-desktop@1x.png"), url("../../img/bg-about2-desktop@1x.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 221px 337px, 263px 400px;
+  background-position: 236px 172px, 67px 131px;
+
+  &::before {
+    @include pseudo ("", absolute, 400px, 350px);
+    top: 153px;
+    left: -50px;
+    background-color: $blue;
+    border-radius: 25px;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 20px;
+  color: $dark-gray;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+.about__content {
+  margin: 0;
+  margin-bottom: 30px;
+  color: $gray;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.about__link {
+  display: block;
+  width: 105px;
+  padding: 5px 20px 5px 0;
+  color: $blue;
+  font-size: 16px;
+  line-height: 27px;
+  text-decoration: none;
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+  background-size: 15px 11px;
+  background-position: 87px 13px;
+}
