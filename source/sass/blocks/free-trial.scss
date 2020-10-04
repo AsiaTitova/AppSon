@@ -1,0 +1,55 @@
+.free-trial {
+  background-color: $light-gray;
+}
+
+.free-trial__container {
+  padding: 130px 195px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.free-trial__wrap {
+  margin-right: 160px;
+}
+
+.free-trial__title {
+  margin: 0;
+  margin-bottom: 20px;
+  color: $dark-gray;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+.free-trial__text {
+  margin: 0;
+  color: $gray;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.free-trial__link {
+  display: block;
+  padding: 24px 67px;
+  color: $white;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: $blue;
+  border-radius: 5px;
+  background-image: url("../img/arrow-white.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 14px;
+  background-position: 165px 30px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

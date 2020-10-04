@@ -1,0 +1,26 @@
+.social-networks {
+  @include list-style (none, 0, 0);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-networks__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social-networks__link {
+  display: block;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social-networks__icon {
+  fill: $white;
+}

@@ -4,6 +4,12 @@
   padding: 23px 25px 15px 25px;
   background-color: $blue;
 
+  &--subscribe {
+    border-radius: 0;
+    background-color: transparent;
+    padding: 10px;
+  }
+
   &:hover,
   &focus {
     opacity: 0.7;
