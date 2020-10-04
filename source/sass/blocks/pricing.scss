@@ -1,0 +1,62 @@
+.pricing__container {
+  padding: 174px 97px 172px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.pricing__title {
+  margin: 0;
+  margin-bottom: 30px;
+  color: $dark-gray;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+.pricing__content {
+  margin: 0;
+  margin-bottom: 40px;
+  color: $gray;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.pricing__wrap {
+  margin-right: 150px;
+  width: 335px;
+}
+
+.pricing__buttons {
+  display: flex;
+}
+
+.pricing__button {
+  @include border-left-radius (25px, 25px);
+  display: block;
+  padding: 11px 50px;
+  font-size: 16px;
+  line-height: 27px;
+  color: $white;
+  font-weight: 700;
+  background-color: $blue;
+  border: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--light {
+    @include border-left-radius (0, 0);
+    @include border-right-radius (25px, 25px);
+    padding: 9px 48px;
+    color: $blue;
+    background-color: $white;
+    border: 2px solid $blue;
+  }
+}

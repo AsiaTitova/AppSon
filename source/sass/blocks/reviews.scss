@@ -1,0 +1,22 @@
+.reviews {
+  background-color: $light-gray;
+  background-image: url("../../img/bg-reviews-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 752px 608px;
+}
+
+.reviews__title {
+  padding: 120px 0 0 872px;
+  margin-bottom: 55px;
+  color: $dark-gray;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+.reviews__review-card {
+  width: 100%;
+  overflow-x: hidden;
+}
+
