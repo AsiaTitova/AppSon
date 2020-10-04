@@ -1,0 +1,23 @@
+.news__container {
+  padding: 150px 0 125px;
+}
+
+.news__title {
+  margin: 0;
+  margin-bottom: 30px;
+  color: $dark-gray;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.news__text {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0 195px;
+  color: $gray;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+}

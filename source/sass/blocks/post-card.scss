@@ -1,0 +1,74 @@
+.post-card {
+  width: 555px;
+  display: flex;
+  margin-bottom: 40px;
+
+  &--main {
+    flex-direction: column;
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
+  &--main .post-card__img {
+    margin-bottom: 36px;
+    margin-right: 0;
+  }
+
+  &--main .post-card__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 36px;
+    color: $blue;
+  }
+
+  &--main .post-card__description {
+    margin-bottom: 25px;
+  }
+
+  &--main .post-card__link {
+    display: block;
+  }
+}
+
+.post-card__img {
+  margin-right: 30px;
+}
+
+.post-card__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  color: $dark-gray;
+}
+
+.post-card__description {
+  margin: 0;
+  color: $gray;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.post-card__link {
+  display: none;
+  padding: 5px 20px 5px 0;
+  color: $blue;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 500;
+  text-decoration: none;
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+  background-size: 15px 11px;
+  background-position: 150px 13px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
