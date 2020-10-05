@@ -1,8 +1,16 @@
 .slider {
-  @include list-style (none, 0, 0);
   display: flex;
-  padding-left: 872px;
-  padding-bottom: 135px;
+  padding-left: 45.1%;
+  padding-bottom: 131px;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding-bottom: 10px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-left: 10%;
+    padding-bottom: 40px;
+  }
 }
 
 .slider__button {
@@ -32,5 +40,14 @@
   &:active {
     background-color: $blue;
     opacity: 0.3;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 12px;
+    height: 10px;
+
+    &--active {
+      width: 20px;
+    }
   }
 }

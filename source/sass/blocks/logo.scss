@@ -1,7 +1,7 @@
 .logo__link {
   @include border-bottom-radius (21.5px, 21.5px);
   display: block;
-  padding: 23px 25px 15px 25px;
+  padding: 33px 24px 34px;
   background-color: $blue;
 
   &--subscribe {
@@ -18,8 +18,24 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (max-width: $tablet-breakpoint) {
+    @include border-bottom-radius (10.5px, 10.5px);
+    padding: 16px 12px 17px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    &--subscribe {
+      padding: 16px 77px 17px;
+    }
+  }
 }
 
 .logo__img {
   display: block;
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 91px;
+    height: 23px;
+  }
 }

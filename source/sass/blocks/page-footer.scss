@@ -4,11 +4,20 @@
 }
 
 .page-footer__container {
-  padding: 30px 0;
+  padding: 24px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: 24px 130px 24px 10px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 20px 16px 120px;
+    flex-direction: column;
+  }
 }
 
 .page-footer__copyright {
@@ -16,4 +25,16 @@
   color: $white;
   font-size: 16px;
   line-height: 27px;
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 30%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 80%;
+    margin-bottom: 30px;
+  }
 }

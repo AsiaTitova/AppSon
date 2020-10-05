@@ -5,4 +5,12 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (max-width: $header-width) {
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 320px;
+  }
 }

@@ -2,11 +2,32 @@
   @include list-style (none, 0, 0);
   display: flex;
   flex-wrap: wrap;
-  margin-left: 225px;
+  margin-left: 118px;
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-left: 0;
+    width: 30%;
+    justify-content: space-around;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 80%;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .service-navigation__item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 40px;
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-right: 0;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-bottom: 15px;
+  }
 }
 
 .service-navigation__link {

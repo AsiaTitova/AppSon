@@ -3,9 +3,21 @@
 }
 
 .subscribe__container {
-  padding: 125px 293px;
+  padding: 120px 293px 131px;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: 70px 106px 100px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 40px 16px 60px;
+  }
 }
 
 .subscribe__logo {
-  margin: 0 180px 20px 180px;
+  margin: 0 200px 22px 201px;
+
+  @media (max-width: $mobile-breakpoint) {
+    margin: 0 20px 22px 20px;
+  }
 }

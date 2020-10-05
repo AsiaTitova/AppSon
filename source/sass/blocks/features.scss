@@ -4,7 +4,15 @@
 
 .features__container {
   position: relative;
-  padding: 205px 30px 170px;
+  padding: 205px 30px 160px;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: 90px 30px 80px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 90px 16px 80px;
+  }
 }
 
 .features__scroll {
@@ -41,19 +49,31 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (max-width: $tablet-breakpoint) {
+    justify-content: space-around;
+  }
 }
 
 .features__item {
   width: 300px;
 
   &:nth-child(3n-1) {
-    margin-top: 60px;
+    margin-top: 50px;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-bottom: 30px;
+
+    &:nth-child(3n-1) {
+      margin-top: 0;
+    }
   }
 }
 
 .features__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   color: $dark-gray;
   font-size: 18px;
   line-height: 27px;
@@ -72,5 +92,5 @@
 .features__img {
   display: block;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }

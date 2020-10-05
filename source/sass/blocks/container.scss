@@ -1,3 +1,11 @@
 .container {
   @include wrap ($content-desktop-width, 0 auto);
+
+  @media (max-width: $tablet-breakpoint) {
+    width: $tablet-width;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: $mobile-width;
+  }
 }

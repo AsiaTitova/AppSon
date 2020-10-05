@@ -1,37 +1,85 @@
 .keep-in-touch__container {
   position: relative;
-  padding: 98px 585px 219px 0;
-  background-image: url("../img/bg-keep-in-touch-desktop@1x.png"), url("../img/bg-keep-in-touch2-desktop@2x.png");
+  padding: 186px 585px 214px 0;
+  background-image: url("../img/bg-keep-in-touch-desktop@1x.png"), url("../img/bg-keep-in-touch2-desktop@1x.png");
   background-repeat: no-repeat, no-repeat;
   background-size: 331px 447px, 373px 510px;
-  background-position: 839px 76px, 639px 40px;
+  background-position: 787px 74px, 609px 42px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-keep-in-touch-desktop@2x.png"), url("../img/bg-keep-in-touch2-desktop@2x.png");
+  }
 
   &::before {
-    @include pseudo ("", absolute, 400px, 350px);
-    top: 50px;
-    right: 0;
+    @include pseudo ("", absolute, 485px, 425px);
+    top: 109px;
+    right: -57px;
     background-color: $blue;
-    border-radius: 25px;
-    transform: rotate(45deg);
+    border-radius: 40px;
+    transform: rotate(50deg);
     z-index: -1;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: 90px 330px 120px 60px;
+    background-size: 171px 224px, 195px 254px;
+    background-position: 493px 148px, 566px 18px;
+
+    &::before {
+      width: 212px;
+      height: 242px;
+      top: 51px;
+      right: 55px;
+      transform: rotate(45deg);
+    }
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 40px 16px 80px 163px;
+    background-image: none, url("../img//bg-keep-in-touch2-desktop@2x.png");
+    background-size: 0 0, 165px 224px;
+    background-position: 0 0, 5px 40px;
+
+    &::before {
+      width: 114px;
+      height: 152px;
+      top: 40px;
+      left: 0;
+      border-radius: 20px;
+    }
   }
 }
 
 .keep-in-touch__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
   color: $dark-gray;
   font-size: 32px;
   line-height: 36px;
   font-weight: 500;
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 20px;
+    line-height: 17px;
+  }
 }
 
 .keep-in-touch__content {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 21px;
   color: $gray;
   font-size: 16px;
   line-height: 27px;
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 .keep-in-touch__link {
@@ -45,7 +93,7 @@
   background-image: url("../img/arrow.png");
   background-repeat: no-repeat;
   background-size: 15px 11px;
-  background-position: 87px 13px;
+  background-position: 89px 13px;
 
   &:hover,
   &:focus {
@@ -54,5 +102,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 14px;
+    line-height: 24px;
   }
 }

@@ -3,23 +3,44 @@
 }
 
 .free-trial__container {
-  padding: 130px 195px;
+  padding: 130px 193px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: 80px 60px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 40px 16px;
+  }
 }
 
 .free-trial__wrap {
-  margin-right: 160px;
+  margin-right: 162px;
+
+  @media (max-width: $mobile-breakpoint) {
+    margin: 0 auto 20px auto;
+  }
 }
 
 .free-trial__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   color: $dark-gray;
   font-size: 32px;
   line-height: 36px;
   font-weight: 500;
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 20px;
+    line-height: 17px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    text-align: center;
+  }
 }
 
 .free-trial__text {
@@ -27,22 +48,31 @@
   color: $gray;
   font-size: 16px;
   line-height: 27px;
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    text-align: center;
+  }
 }
 
 .free-trial__link {
   display: block;
-  padding: 24px 67px;
+  padding: 26px 102px 23px 72px;
   color: $white;
   font-size: 16px;
   line-height: 27px;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
   background-color: $blue;
   border-radius: 5px;
   background-image: url("../img/arrow-white.svg");
   background-repeat: no-repeat;
   background-size: 20px 14px;
-  background-position: 165px 30px;
+  background-position: 172px 32px;
 
   &:hover,
   &:focus {
@@ -51,5 +81,15 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: 16px 83px 16px 51px;
+    border-radius: 10px;
+    background-position: 158px 23px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin: 0 auto;
   }
 }

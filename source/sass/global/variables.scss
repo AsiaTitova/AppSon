@@ -11,6 +11,8 @@ $dark-blue: #0063dd;
 $dark-gray: #333333;
 $light-gray: #f5fcfd;
 $button-gray: #d4d4d4;
+$line-gray: #e0e0e0;
+$shadow: rgba(165, 165, 165, 0.25);
 
 
 // ширина экрана //
@@ -18,6 +20,15 @@ $button-gray: #d4d4d4;
 $desktop-width: 1640px;
 $content-desktop-width: 1140px;
 $max-desktop-width: 1921px;
+
+$desktop-breakpoint: 1139px;
+$header-width: 1639px;
+
+$tablet-breakpoint: 1023px;
+$tablet-width: 768px;
+
+$mobile-breakpoint: 767px;
+$mobile-width: 320px;
 
 /** подготовка графики - ретина **/
 $retina-dpi: 144dpi;

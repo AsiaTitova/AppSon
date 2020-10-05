@@ -1,40 +1,80 @@
 .pricing__container {
-  padding: 174px 97px 172px 0;
+  padding: 126px 0 114px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: 90px 60px 80px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 40px 16px;
+  }
 }
 
 .pricing__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-top: 160px;
+  margin-bottom: 27px;
   color: $dark-gray;
   font-size: 32px;
   line-height: 36px;
   font-weight: 500;
+
+  @media (max-width: $tablet-breakpoint) {
+    margin: 0;
+    margin-bottom: 27px;
+    font-size: 20px;
+    line-height: 17px;
+  }
 }
 
 .pricing__content {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   color: $gray;
   font-size: 16px;
   line-height: 27px;
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 120px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 0;
+  }
 }
 
 .pricing__wrap {
-  margin-right: 150px;
+  margin-right: 50px;
   width: 335px;
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-right: 0;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .pricing__buttons {
   display: flex;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: 0 203px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 0 24px;
+  }
 }
 
 .pricing__button {
   @include border-left-radius (25px, 25px);
   display: block;
-  padding: 11px 50px;
+  padding: 11px 52px;
   font-size: 16px;
   line-height: 27px;
   color: $white;
@@ -54,9 +94,15 @@
   &--light {
     @include border-left-radius (0, 0);
     @include border-right-radius (25px, 25px);
-    padding: 9px 48px;
+    padding: 9px 56px;
     color: $blue;
     background-color: $white;
     border: 2px solid $blue;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 6px 35px;
   }
 }

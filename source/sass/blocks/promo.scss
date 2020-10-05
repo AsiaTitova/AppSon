@@ -8,53 +8,82 @@
     background-image: url("../img/bg-promo-desktop@2x.png");
   }
 
-  // @media (min-width: $max-desktop-width) {
-  //   background-size: cover;
-  //   background-position: 50% 0;
-  // }
+  @media (max-width: $desktop-breakpoint) {
+    background-size: cover;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    background-position: 50% 150px;
+  }
 }
 
 .promo__container {
-  padding: 207px 263px 618px;
+  padding: 208px 263px 613px;
   background-image: url("../img/bg-promo-device@1x.png");
   background-repeat: no-repeat;
-  background-size: 810px 1067px;
-  background-position: 165px 507px;
+  background-size: 915px 1067px;
+  background-position: 113px 452px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-promo-device@2x.png");
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: 120px 13.7% 291px;
+    background-size: 537px 600px;
+    background-position: 50% 332px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 194px 16px 180px;
+    background-size: 288px 400px;
+    background-position: 50% 500px;
   }
 }
 
 .promo__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 34px;
   color: $dark-gray;
   font-size: 36px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 20px;
+    line-height: 17px;
+  }
 }
 
 .promo__content {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   color: $gray;
   font-size: 16px;
   line-height: 27px;
   text-align: center;
+
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .promo__wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (max-width: $mobile-breakpoint) {
+    flex-direction: column;
+  }
 }
 
 .promo__download {
   display: block;
-  margin-right: 30px;
-  padding: 12px 40px;
+  margin-right: 29px;
+  padding: 12px 45px;
   color: $white;
   font-size: 16px;
   line-height: 27px;
@@ -72,11 +101,15 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin: 0 40px 10px 40px;
+  }
 }
 
 .promo__free-trial {
   display: block;
-  padding: 10px 38px;
+  padding: 10px 45px;
   color: $blue;
   font-size: 16px;
   line-height: 27px;
@@ -94,5 +127,9 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin: 0 40px;
   }
 }

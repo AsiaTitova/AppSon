@@ -2,6 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: 0 5px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 0 15px 15px;
+    align-items: flex-start;
+  }
 }
 
 .navigation__list {
@@ -9,6 +18,14 @@
   display: flex;
   margin-left: auto;
   padding: 25px 0;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: 15px 0;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    flex-direction: column;
+  }
 }
 
 .navigation__item:not(:last-child) {
@@ -40,8 +57,8 @@
 
 .navigation__sing-in {
   display: block;
-  margin-left: 50px;
-  padding: 12px 20px;
+  margin-left: 52px;
+  padding: 12px 52px;
   color: $white;
   font-weight: 700;
   font-size: 16px;
@@ -58,5 +75,15 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: 6px 35px;
+    font-size: 13px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin: 0;
+    margin-top: -40px;
   }
 }
