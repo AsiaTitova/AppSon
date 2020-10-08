@@ -44,34 +44,36 @@
     });
   }
 
+  function showReviews() {
+    var itemReviewsOne = document.querySelector('.review-card__item--one');
+    var itemReviewsTwo = document.querySelector('.review-card__item--two');
+    var itemReviewsThree = document.querySelector('.review-card__item--three');
+    var widthItem = itemReviewsOne.offsetWidth + 34;
+    var buttonSlider = document.querySelectorAll('.slider__button');
+    for (var i = 0; i < buttonSlider.length; i++) {
+      buttonSlider[0].addEventListener('click', function () {
+        itemReviewsOne.style.left = 0 + 'px';
+        itemReviewsTwo.style.left = widthItem  + 'px';
+        itemReviewsThree.style.left = widthItem * 2 + 'px';
+      });
 
-  var width = itemSlider.offsetWidth; // ширина картинки
-  var count = 1; // видимое количество изображений
+      buttonSlider[1].addEventListener('click', function () {
+        itemReviewsOne.style.left = (0 - widthItem) + 'px';
+        itemReviewsTwo.style.left = 0 + 'px';
+        itemReviewsThree.style.left = widthItem + 'px';
+      });
 
-  var list = document.querySelector('.review-card');
-  var wrap = document.querySelector('.reviews');
-  var position = 0; // положение ленты прокрутки
-
-  function scrollLeft() {
-    wrap.querySelector('.slider__button--prev').addEventListener('click', function() {
-      position += width * count;
-      position = Math.min(position, 0);
-      itemSlider.style.marginLeft = position + 'px';
-    });
-  }
-
-  function scrollRight() {
-    wrap.querySelector('.slider__button--next').addEventListener('click', function() {
-      position -= width * count;
-      position = Math.max(position, -width * (itemSlider.length - count));
-      itemSlider.style.marginLeft = position + 'px';
-    });
+      buttonSlider[2].addEventListener('click', function () {
+        itemReviewsOne.style.left = (0 - widthItem) + 'px';
+        itemReviewsTwo.style.left = (0 - widthItem) + 'px';
+        itemReviewsThree.style.left = 0 + 'px';
+      });
+    }
   }
 
   setTogglerMenuHandler(navigationToggler, navigation, 'navigation--close');
   showButtonScrollHandler();
   scrollTopWindowHandler();
   controlButtonSlider();
-  scrollLeft();
-  scrollRight();
+  showReviews();
 })();

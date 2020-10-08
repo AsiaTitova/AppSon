@@ -1,5 +1,7 @@
 .review-card {
   @include list-style (none, 0, 0);
+  position: relative;
+  min-height: 209px;
   margin-left: 45.1%;
   margin-bottom: 47px;
   display: flex;
@@ -34,6 +36,9 @@
 }
 
 .review-card__item {
+  position: absolute;
+  top: 0;
+  left: 0;
   padding: 25px 25px 35px 30px;
   width: 360px;
   background-color: $white;
@@ -42,13 +47,25 @@
     margin-right: 34px;
   }
 
-  &--active {
-    transform: translateX(-396px);
+  &--two {
+    left: 396px;
+  }
+
+  &--three {
+    left: 792px;
   }
 
   @media (max-width: $tablet-breakpoint) {
     padding: 15px;
     width: 250px;
+
+    &--two {
+      left: 284px;
+    }
+
+    &--three {
+      left: 568px;
+    }
   }
 }
 
