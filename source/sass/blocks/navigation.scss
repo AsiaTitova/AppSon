@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   align-items: center;
 
+  @media (max-width: $desktop-width) {
+    padding: 0 20px;
+  }
+
   @media (max-width: $tablet-breakpoint) {
     padding: 0 5px;
   }
@@ -10,6 +14,51 @@
   @media (max-width: $mobile-breakpoint) {
     padding: 0 15px 15px;
     align-items: flex-start;
+
+    &--close {
+      padding: 0;
+    }
+
+    &--close .navigation__toggler {
+      margin-right: 15px;
+    }
+
+    &--close .navigation__logo {
+      padding-left: 15px;
+    }
+
+    &--close .navigation__toggler::before,
+    &--close .navigation__toggler::after {
+      top: 23px;
+      left: 13px;
+      transform: rotate(45deg);
+    }
+
+    &--close .navigation__toggler::after {
+      transform: rotate(-45deg);
+    }
+
+    &--close .navigation__list {
+      @include border-bottom-radius (20px, 20px);
+      display: block;
+      width: 100%;
+      background-color: $light-gray;
+    }
+
+    &--close .navigation__item {
+      width: 100%;
+      padding: 20px 16px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid $button-gray;
+    }
+
+    &--close .navigation__item:last-child {
+      margin-bottom: 80px;
+    }
+
+    &--close .navigation__sing-in {
+      display: block;
+    }
   }
 }
 
@@ -25,6 +74,7 @@
 
   @media (max-width: $mobile-breakpoint) {
     flex-direction: column;
+    display: none;
   }
 }
 
@@ -40,6 +90,7 @@
   line-height: 27px;
   text-transform: uppercase;
   text-decoration: none;
+  outline: none;
 
   &--current {
     color: blue;
@@ -67,14 +118,17 @@
   border: none;
   background-color: $dark-blue;
   border-radius: 25px;
+  outline: none;
+  cursor: pointer;
 
   &:hover,
   &focus {
-    background-color: $blue;
+    background-color: $hover-blue;
   }
 
   &:active {
-    opacity: 0.3;
+    background-color: $hover-blue;
+    opacity: 0.7;
   }
 
   @media (max-width: $tablet-breakpoint) {
@@ -83,7 +137,8 @@
   }
 
   @media (max-width: $mobile-breakpoint) {
+    display: none;
     margin: 0;
-    margin-top: -40px;
+    margin-top: -65px;
   }
 }

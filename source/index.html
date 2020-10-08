@@ -10,6 +10,18 @@
     <link rel="preload" href="fonts/Quicksand-Medium.woff2" as="font">
     <link rel="preload" href="fonts/Quicksand-Regular.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- Pixel Glass -->
+    <style>
+      html {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        /* Mobile layout by default */
+        background-image: url("prew/prew.png");
+      }
+    </style>
+    <link rel="stylesheet" href="https://yoksel.github.io/pixel-glass-js/styles.css">
+    <script src="https://yoksel.github.io/pixel-glass-js/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body>
     <header class="page-header">
@@ -23,6 +35,7 @@
               </picture>
             </a>
           </div>
+          <button class="navigation__toggler toggler" type="button" aria-label="toggler menu"></button>
           <ul class="navigation__list">
             <li class="navigation__item navigation__item--current">
               <a class="navigation__link navigation__link--current" href="#" aria-label="Go to home page">home</a>
@@ -195,9 +208,9 @@
           </li>
         </ul>
         <div class="reviews__slider slider">
-          <button class="slider__button slider__button--active" type="button" aria-label="check first review"></button>
+          <button class="slider__button slider__button--active slider__button--prev" type="button" aria-label="check first review"></button>
           <button class="slider__button slider__button" type="button" aria-label="check second review"></button>
-          <button class="slider__button slider__button" type="button" aria-label="check third review"></button>
+          <button class="slider__button slider__button slider__button--next" type="button" aria-label="check third review"></button>
         </div>
       </section>
       <section class="page-main__news news">
@@ -330,8 +343,9 @@
         </ul>
       </div>
     </footer>
-    <div class="scroll">
+    <div class="scroll scroll--close">
       <button class="scroll__button" type="button"></button>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>

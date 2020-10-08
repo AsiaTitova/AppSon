@@ -4,13 +4,19 @@
 
 .work-process__container {
   padding: 143px 30px 124px;
+  background-image: url("../img/bg-works-desktop@1x.png");
+  background-position: 516px 130px;
+  background-repeat: no-repeat;
+  background-size: 108px 74px;
 
   @media (max-width: $tablet-breakpoint) {
     padding: 80px 60px;
+    background-position: 325px 49px;
   }
 
   @media (max-width: $mobile-breakpoint) {
     padding: 40px 16px;
+    background-position: 109px 10px;
   }
 }
 

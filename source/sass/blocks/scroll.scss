@@ -1,7 +1,11 @@
 .scroll {
-  position: absolute;
+  position: fixed;
   bottom: 25px;
   right: 7.8%;
+
+  &--close {
+    display: none;
+  }
 
   @media (max-width: $mobile-breakpoint) {
     right: 50%;
@@ -21,4 +25,6 @@
   background-size: 24px 17px;
   background-position: 11px 13px;
   transform: rotate(-90deg);
+  outline: none;
+  cursor: pointer;
 }

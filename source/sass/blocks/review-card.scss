@@ -1,15 +1,31 @@
 .review-card {
   @include list-style (none, 0, 0);
-  padding-left: 45.1%;
+  margin-left: 45.1%;
   margin-bottom: 47px;
   display: flex;
+
+  @media (max-width: $desktop-width) {
+    margin-left: 45%;
+  }
+
+  @media (max-width: $desktop-1440) {
+    margin-left: 44.3%;
+  }
+
+  @media (max-width: $content-desktop-width) {
+    margin-left: 42.8%;
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    margin-left: 42.5%;
+  }
 
   @media (max-width: $tablet-breakpoint) {
     margin-bottom: 17px;
   }
 
   @media (max-width: $mobile-breakpoint) {
-    padding-left: 10%;
+    margin-left: 10%;
   }
 }
 
@@ -24,6 +40,10 @@
 
   &:not(:last-child) {
     margin-right: 34px;
+  }
+
+  &--active {
+    transform: translateX(-396px);
   }
 
   @media (max-width: $tablet-breakpoint) {

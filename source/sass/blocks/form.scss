@@ -16,6 +16,7 @@
   border: 2px solid $white;
   border-right: none;
   background-color: transparent;
+  outline: none;
 
   &::placeholder {
     color: $white;
@@ -30,6 +31,7 @@
     width: 100%;
     margin-bottom: 10px;
     border-radius: 30px;
+    border: 2px solid $white;
   }
 }
 
@@ -44,6 +46,8 @@
   text-transform: uppercase;
   border: none;
   background-color: $white;
+  outline: none;
+  cursor: pointer;
 
   &:hover,
   &focus {

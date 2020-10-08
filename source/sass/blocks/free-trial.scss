@@ -73,14 +73,16 @@
   background-repeat: no-repeat;
   background-size: 20px 14px;
   background-position: 172px 32px;
+  outline: none;
 
   &:hover,
   &:focus {
-    opacity: 0.7;
+    background-color: $hover-blue;
   }
 
   &:active {
-    opacity: 0.3;
+    background-color: $hover-blue;
+    opacity: 0.7;
   }
 
   @media (max-width: $tablet-breakpoint) {

@@ -105,14 +105,17 @@
   background-color: $blue;
   border: none;
   border-radius: 25px;
+  outline: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
-    opacity: 0.7;
+    background-color: $hover-blue;
   }
 
   &:active {
-    opacity: 0.3;
+    background-color: $hover-blue;
+    opacity: 0.7;
   }
 
   &--light {
@@ -120,6 +123,19 @@
     color: $blue;
     background-color: $white;
     border: 2px solid $blue;
+  }
+
+  &--light:hover,
+  &--light:focus {
+    margin: 0 auto;
+    border: 2px solid $hover-blue;
+    background-color: transparent;
+    color: $hover-blue;
+  }
+
+  &--light:active {
+    color: $hover-blue;
+    opacity: 0.7;
   }
 
   @media (max-width: $tablet-breakpoint) {

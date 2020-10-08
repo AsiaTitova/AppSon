@@ -2,11 +2,28 @@
   background-color: $light-gray;
   background-image: url("../img/bg-reviews-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: -15.9% 0;
+  background-position: 17.7% 0;
   background-size: 752px 608px;
+
+  @media (max-width: $desktop-width) {
+    background-position: -15.9% 0;
+  }
+
+  @media (max-width: $desktop-1440) {
+    background-position: -35.1% 0;
+  }
+
+  @media (max-width: $content-desktop-width) {
+    background-position: -101.1% 0;
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    background-position: -125.1% 0;
+  }
 
   @media (max-width: $tablet-breakpoint) {
     background-size: 376px 304px;
+    background-position: -15.9% 0;
   }
 
   @media (max-width: $mobile-breakpoint) {
@@ -16,12 +33,28 @@
 }
 
 .reviews__title {
-  padding: 123px 0 0 45.1%;
+  padding: 123px 0 0 46.8%;
   margin-bottom: 52px;
   color: $dark-gray;
   font-size: 32px;
   line-height: 36px;
   font-weight: 500;
+
+  @media (max-width: $desktop-width) {
+    padding: 123px 0 0 45%;
+  }
+
+  @media (max-width: $desktop-1440) {
+    padding: 123px 0 0 44.3%;
+  }
+
+  @media (max-width: $content-desktop-width) {
+    padding: 123px 0 0 42.8%;
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    padding: 123px 0 0 42.5%;
+  }
 
   @media (max-width: $tablet-breakpoint) {
     padding: 40px 10px 0 45.1%;

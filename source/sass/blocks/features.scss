@@ -4,7 +4,7 @@
 
 .features__container {
   position: relative;
-  padding: 205px 30px 160px;
+  padding: 165px 0 120px;
 
   @media (max-width: $tablet-breakpoint) {
     padding: 90px 30px 80px;
@@ -25,12 +25,12 @@
   height: 70px;
   border-radius: 50%;
   padding: 0;
-  border: none;
-  background-color: transparent;
-  background-image: url("../../img/scroll-down.svg");
+  border: 1px solid $arrow-down;
+  background-color: $white;
+  background-image: url("../img/arrow-down.svg");
   background-repeat: no-repeat;
-  background-size: 71px 71px;
-  background-position: 0 0;
+  background-size: 25px 37px;
+  background-position: 50% 50%;
   cursor: pointer;
   z-index: 2;
 
@@ -56,18 +56,33 @@
 }
 
 .features__item {
-  width: 300px;
+  width: 360px;
+  padding: 40px 30px;
+  background-color: $white;
 
   &:nth-child(3n-1) {
     margin-top: 50px;
   }
 
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
   @media (max-width: $tablet-breakpoint) {
+    width: 300px;
     margin-bottom: 30px;
 
     &:nth-child(3n-1) {
       margin-top: 0;
     }
+
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 288px;
   }
 }
 

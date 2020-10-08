@@ -12,6 +12,7 @@
   &--main .post-card__img {
     margin-bottom: 35px;
     margin-right: 0;
+    margin-top: 0;
   }
 
   &--main .post-card__link {
@@ -54,6 +55,7 @@
 }
 
 .post-card__img {
+  margin-top: 2px;
   margin-right: 30px;
 
   @media (max-width: $desktop-breakpoint) {
@@ -79,6 +81,7 @@
   font-weight: 500;
   color: $dark-gray;
   text-decoration: none;
+  outline: none;
 
   &:hover,
   &:focus {
@@ -120,6 +123,7 @@
   background-repeat: no-repeat;
   background-size: 15px 11px;
   background-position: 143px 15px;
+  outline: none;
 
   &:hover,
   &:focus {

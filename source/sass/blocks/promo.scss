@@ -1,4 +1,5 @@
 .promo {
+  background-color: $light-gray;
   background-image: url("../img/bg-promo-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 1920px 1043px;
@@ -21,8 +22,8 @@
   padding: 208px 263px 613px;
   background-image: url("../img/bg-promo-device@1x.png");
   background-repeat: no-repeat;
-  background-size: 915px 1067px;
-  background-position: 113px 452px;
+  background-size: 892px 608px;
+  background-position: 124px 452px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-promo-device@2x.png");
@@ -30,14 +31,14 @@
 
   @media (max-width: $tablet-breakpoint) {
     padding: 120px 13.7% 291px;
-    background-size: 537px 600px;
+    background-size: 537px auto;
     background-position: 50% 332px;
   }
 
   @media (max-width: $mobile-breakpoint) {
-    padding: 194px 16px 180px;
-    background-size: 288px 400px;
-    background-position: 50% 500px;
+    padding: 95px 16px 180px;
+    background-size: 288px auto;
+    background-position: 50% 400px;
   }
 }
 
@@ -92,14 +93,16 @@
   border: none;
   border-radius: 25px;
   background-color: $blue;
+  outline: none;
 
   &:hover,
   &:focus {
-    opacity: 0.7;
+    background-color: $hover-blue;
   }
 
   &:active {
-    opacity: 0.3;
+    background-color: $hover-blue;
+    opacity: 0.7;
   }
 
   @media (max-width: $mobile-breakpoint) {
@@ -119,14 +122,17 @@
   border: 2px solid $blue;
   border-radius: 25px;
   background-color: $white;
+  outline: none;
 
   &:hover,
   &:focus {
-    opacity: 0.7;
+    border: 2px solid $hover-blue;
+    color: $hover-blue;
   }
 
   &:active {
-    opacity: 0.3;
+    color: $hover-blue;
+    opacity: 0.7;
   }
 
   @media (max-width: $mobile-breakpoint) {

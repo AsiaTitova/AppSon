@@ -3,6 +3,22 @@
   padding-left: 45.1%;
   padding-bottom: 131px;
 
+  @media (max-width: $desktop-width) {
+    padding-left: 45%;
+  }
+
+  @media (max-width: $desktop-1440) {
+    padding-left: 44.3%;
+  }
+
+  @media (max-width: $content-desktop-width) {
+    padding-left: 42.8%;
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    padding-left: 42.5%;
+  }
+
   @media (max-width: $tablet-breakpoint) {
     padding-bottom: 10px;
   }
@@ -21,6 +37,7 @@
   border: none;
   background-color: $button-gray;
   cursor: pointer;
+  outline: none;
 
   &--active {
     width: 30px;
