@@ -31,8 +31,18 @@
     display: block;
   }
 
+  @media (max-width: $desktop-breakpoint) {
+    width: 48%;
+    margin-bottom: 2.9%;
+
+    &--main {
+      margin-right: 2.5%;
+    }
+  }
+
   @media (max-width: $tablet-breakpoint) {
     width: 350px;
+    margin-bottom: 37px;
 
     &--main {
       width: 300px;

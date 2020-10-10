@@ -6,6 +6,10 @@
   position: relative;
   padding: 165px 0 120px;
 
+  @media (max-width: $desktop-breakpoint) {
+    padding: 165px 5% 120px;
+  }
+
   @media (max-width: $tablet-breakpoint) {
     padding: 90px 30px 80px;
   }
@@ -66,6 +70,14 @@
 
   &:not(:last-child) {
     margin-right: 30px;
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    width: 30%;
+
+    &:not(:last-child) {
+      margin-right: 2.5%;
+    }
   }
 
   @media (max-width: $tablet-breakpoint) {

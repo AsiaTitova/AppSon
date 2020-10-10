@@ -1,6 +1,10 @@
 .container {
   @include wrap ($content-desktop-width, 0 auto);
 
+  @media (max-width: $desktop-breakpoint) {
+    width: 100%;
+  }
+
   @media (max-width: $tablet-breakpoint) {
     width: $tablet-width;
   }

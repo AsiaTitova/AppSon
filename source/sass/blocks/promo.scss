@@ -29,6 +29,11 @@
     background-image: url("../img/bg-promo-device@2x.png");
   }
 
+  @media (max-width: $desktop-breakpoint) {
+    padding: 208px 23% 613px;
+    background-position: 50% 452px;
+  }
+
   @media (max-width: $tablet-breakpoint) {
     padding: 120px 13.7% 291px;
     background-size: 537px auto;

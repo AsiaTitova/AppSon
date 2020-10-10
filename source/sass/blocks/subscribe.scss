@@ -5,6 +5,10 @@
 .subscribe__container {
   padding: 120px 293px 131px;
 
+  @media (max-width: $desktop-breakpoint) {
+    padding: 120px 25% 131px;
+  }
+
   @media (max-width: $tablet-breakpoint) {
     padding: 70px 106px 100px;
   }
@@ -16,6 +20,14 @@
 
 .subscribe__logo {
   margin: 0 200px 22px 201px;
+
+  @media (max-width: $desktop-breakpoint) {
+    margin: 0 17.5% 22px 35%;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    margin: 0 200px 22px 201px;
+  }
 
   @media (max-width: $mobile-breakpoint) {
     margin: 0 20px 22px 20px;

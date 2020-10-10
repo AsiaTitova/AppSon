@@ -21,6 +21,15 @@
     margin-right: 29px;
   }
 
+  @media (max-width: $desktop-breakpoint) {
+    width: 315px;
+    padding: 42px 71px 30px;
+
+    &:not(:last-child) {
+      margin-right: 2.5%;
+    }
+  }
+
   @media (max-width: $tablet-breakpoint) {
     width: 300px;
     padding: 35px 25px;

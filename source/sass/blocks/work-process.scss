@@ -9,6 +9,10 @@
   background-repeat: no-repeat;
   background-size: 108px 74px;
 
+  @media (max-width: $desktop-breakpoint) {
+    padding: 143px 2.6% 124px;
+  }
+
   @media (max-width: $tablet-breakpoint) {
     padding: 80px 60px;
     background-position: 325px 49px;
@@ -66,6 +70,13 @@
     z-index: 1;
   }
 
+  @media (max-width: $desktop-breakpoint) {
+    &::before {
+      width: 75%;
+      left: 13%;
+    }
+  }
+
   @media (max-width: $tablet-breakpoint) {
     &::before {
       width: 420px;
@@ -84,6 +95,10 @@
 .work-process__item {
   width: 300px;
   text-align: center;
+
+  @media (max-width: $desktop-breakpoint) {
+    width: 26%;
+  }
 
   @media (max-width: $tablet-breakpoint) {
     width: 200px;

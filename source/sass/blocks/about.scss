@@ -20,6 +20,18 @@
     z-index: -1;
   }
 
+  @media (max-width: $desktop-breakpoint) {
+    padding: 221px 3% 116px 51%;
+    background-position: 25% 110px, 2% 79px;
+
+    &::before {
+      width: 348px;
+      height: 386px;
+      top: 89px;
+      left: 8%;
+    }
+  }
+
   @media (max-width: $tablet-breakpoint) {
     padding: 90px 10px 120px 330px;
     background-size: 171px 224px, 195px 254px;

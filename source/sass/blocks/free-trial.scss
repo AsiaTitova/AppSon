@@ -8,6 +8,10 @@
   flex-wrap: wrap;
   align-items: center;
 
+  @media (max-width: $desktop-breakpoint) {
+    padding: 130px 17%;
+  }
+
   @media (max-width: $tablet-breakpoint) {
     padding: 80px 60px;
   }
@@ -19,6 +23,10 @@
 
 .free-trial__wrap {
   margin-right: 162px;
+
+  @media (max-width: $desktop-breakpoint) {
+    margin-right: 14%;
+  }
 
   @media (max-width: $mobile-breakpoint) {
     margin: 0 auto 20px auto;
