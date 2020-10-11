@@ -9,12 +9,16 @@
     background-image: url("../img/bg-promo-desktop@2x.png");
   }
 
-  @media (max-width: $desktop-breakpoint) {
+  @media (max-width: $desktop-width) {
+    background-size: 100% auto;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
     background-size: cover;
   }
 
   @media (max-width: $mobile-breakpoint) {
-    background-position: 50% 150px;
+    background-position: 50% bottom;
   }
 }
 
@@ -29,9 +33,16 @@
     background-image: url("../img/bg-promo-device@2x.png");
   }
 
-  @media (max-width: $desktop-breakpoint) {
-    padding: 208px 23% 613px;
-    background-position: 50% 452px;
+  @media (max-width: $desktop-width) {
+    padding: 10% 17% 27%;
+    background-size: 53% auto;
+    background-position: 50% 102%;
+  }
+
+  @media (max-width: $desktop-1440) {
+    padding: 10% 23% 26%;
+    background-size: 40% auto;
+    background-position: 50% 102%;
   }
 
   @media (max-width: $tablet-breakpoint) {
@@ -43,7 +54,7 @@
   @media (max-width: $mobile-breakpoint) {
     padding: 95px 16px 180px;
     background-size: 288px auto;
-    background-position: 50% 400px;
+    background-position: 50% 430px;
   }
 }
 
@@ -56,7 +67,15 @@
   font-weight: 700;
   text-align: center;
 
+  @media (max-width: $desktop-1440) {
+    margin-bottom: 3%;
+  }
+
   @media (max-width: $tablet-breakpoint) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
     font-size: 20px;
     line-height: 17px;
   }
@@ -70,7 +89,12 @@
   line-height: 27px;
   text-align: center;
 
+  @media (max-width: $desktop-1440) {
+    margin-bottom: 3%;
+  }
+
   @media (max-width: $tablet-breakpoint) {
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 24px;
   }
@@ -112,6 +136,8 @@
 
   @media (max-width: $mobile-breakpoint) {
     margin: 0 40px 10px 40px;
+    padding: 10px 43px;
+    border: 2px solid $white;
   }
 }
 

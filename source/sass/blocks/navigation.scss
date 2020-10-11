@@ -131,6 +131,10 @@
     opacity: 0.7;
   }
 
+  @media (max-width: $desktop-width) {
+    margin-left: 9%;
+  }
+
   @media (max-width: $tablet-breakpoint) {
     padding: 6px 35px;
     font-size: 13px;

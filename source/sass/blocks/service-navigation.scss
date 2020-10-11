@@ -4,6 +4,10 @@
   flex-wrap: wrap;
   margin-left: 118px;
 
+  @media (max-width: $desktop-breakpoint) {
+    margin-left: 10%;
+  }
+
   @media (max-width: $tablet-breakpoint) {
     margin-left: 0;
     width: 30%;

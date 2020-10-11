@@ -13,6 +13,10 @@
     background-position: -35.1% 0;
   }
 
+  @media (max-width: 1250px) {
+    background-position: -60% 0;
+  }
+
   @media (max-width: $content-desktop-width) {
     background-position: -101.1% 0;
   }
@@ -73,5 +77,21 @@
 .reviews__review-card {
   width: 100%;
   overflow-x: hidden;
+
+  @media (max-width: $desktop-width) {
+    width: 55%;
+  }
+
+  @media (max-width: $desktop-1440) {
+    width: 55.7%;
+  }
+
+  @media (max-width: $content-desktop-width) {
+    width: 57.2%;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 90%;
+  }
 }
 

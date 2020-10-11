@@ -20,14 +20,14 @@
     z-index: -1;
   }
 
-  @media (max-width: $desktop-breakpoint) {
+  @media (max-width: $desktop-width) {
     padding: 186px 51% 214px 2%;
     background-position: 102% 74px, 81% 42px;
 
     &::before {
       width: 401px;
       height: 314px;
-      right: 4.3%;
+      right: 5%;
     }
   }
 
