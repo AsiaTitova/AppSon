@@ -2,7 +2,7 @@
   background-color: $light-gray;
   background-image: url("../img/bg-reviews-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: 17.7% 0;
+  background-position: -30px 0;
   background-size: 752px 608px;
 
   @media (max-width: $desktop-width) {
@@ -75,7 +75,6 @@
 }
 
 .reviews__review-card {
-  width: 100%;
   overflow-x: hidden;
 
   @media (max-width: $desktop-width) {
